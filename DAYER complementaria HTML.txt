@@ -1,0 +1,81 @@
+----------------------------- Ejercitación 1 ---------------------------------
+
+1. ¿Ventajas de HTML5?
+
+-) Posee el codigo mas ordenado, debido a la actualizacion de etiquetas, dejando atras las obsoletas
+
+-)Es compatible con todos los navegadores existentes
+
+-) Posee un almacenamiento mejorado, la informacion no viaja al servidor, sino que se mantiene en el HTML, se guarda en el navegador, aun asi borrando las cookies del mismo
+
+-) HTML es adaptativo a cualquier plataforma, la misma pagina se puede observar desde un pc hasta en un telefono
+
+2. ¿Por qué utilizarlo?
+
+	El lenguaje HTML5 se usa para definir la estructura básica de una página web. Sin embargo, una de sus más grandes adiciones en esta nueva versión es poder añadir audio y video sin necesidad de usar Flash u otro reproductor 
+multimedia. 
+
+	Posee geolocalizacion donde el sitio tiene la posibilidad de detectar la ubicacion del usuario, con esto el sitio ofrece la traduccion del mismo si la localizacion no concuerda con la lengua hablada. Antes de esto se le informa al usuario si se le permite acceder a su ubicacion, debido a que es una violacion a la privacidad del mismo.
+	Se pueden crear animaciones 2D, debido a que esta posee una API que permite dibujarlos y animarlos, donde el mismo trae consigo la versatilidad a la hora de que los usuarios jueguen en los sitios, aceptando teclado, mouse y cualquier mando que exista
+
+3. Nombre ventajas
+
+Nombradas en el inciso 1
+
+----------------------------- Ejercitación  2 ---------------------------------
+
+2.A) ¿Qué formatos soporta ?
+
+	Soporta mp3, wav, ogg, au. No obstante la W3C deja abierto a cada empresa desarrolladora de navegadores el abanico abierto a que elijan el formato adecuado para el audio.
+
+2.B) Crear un elemento audio
+
+<audio src = "https://html5tutorial.info/media/vincent.mp3" > </audio>
+ 
+----------------------------- Ejercitación  3 ---------------------------------
+
+3.A)  ¿Qué formatos soporta ?
+
+Soporta mp4, webm, ogv
+
+3.B) Crear un elemento video
+
+<video src = " https://www.w3schools.com/html/mov_bbb.mp4/ogg " >
+
+----------------------------- Ejercitación  4 ---------------------------------
+
+4.A) Crear un formulario con un campo requerido
+
+<form>
+	Coloque la contraseña: <input type="password" required>
+	<input type="submit">
+</form>
+
+4.B) Crear un formulario con un campo de tipo email y validar que funcione
+
+<form>
+	Coloque su email : <input type="email" required>
+	<input type="submit">
+</form>
+
+4.C) Crear un formulario con un campo de tipo fecha y validar que funcione
+
+<form>
+	Coloque una fecha : <input type="date" required>
+	<input type="submit">
+</form>
+
+4.D) Crear un formulario con un campo de tipo color y validar que funcione
+
+<form>
+	Coloque un color : <input type="color" required>
+	<input type="submit">
+</form>
+
+
+4.E) Crear un formulario con un campo de tipo number y validar que funcione. Además configurar valores mínimos y máximos permitidos.
+
+<form>
+        Coloque numero : <input type="number" min="-2" max="10" required>
+        <input type="submit">
+</form>
