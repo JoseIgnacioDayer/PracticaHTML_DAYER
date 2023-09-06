@@ -1,0 +1,268 @@
+--------------------------------- Ejercicio 1: Responder --------------------------------------------------
+
+1. ¿ Qué es CSS y para qué se usa?
+
+	CSS son las siglas de Cascade Style Sheet que traducido significa hojas de estilo en cascada.
+
+	Las hojas de estilo es una tecnología que nos permite controlar la apariencia de una página web. 
+
+Con CSS podemos especificar estilos como el tamaño, fuentes, color, espaciado entre textos y recuadros así como el lugar donde disponer texto e imágenes en la página. Ademas, describe como los elementos dispuestos en la página son presentados al usuario. Es un gran avance que complementa el HTML y la Web en general. 
+
+
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+
+	Las hojas de estilo están compuestas por una o más de esas reglas aplicadas a un documento HTML o XML. La regla tiene dos partes: un selector y la declaración. A su vez la declaración está compuesta por una propiedad y el valor que se le asigne. 
+	El selector funciona como enlace entre el documento y el estilo, especificando los elementos que se van a ver afectados por esa declaración. La declaración es la parte de la regla que establece cuál será el efecto.
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+
+a) Utilizando una hoja de estilo externa que estara vinculada a un documento a través del elemento <link>, el cual debe ir situado en la seccion <head>
+
+b) Utilizando el elemento <style>, en el interior del documento al que se le quiere dar estilo, y que generalmente se situaria en la seccion <head>. De esta forma los estilos seran reconocidos antes de que la pagina se cargue por completo.
+
+c) Utilizando estilos directamente sobre aquellos elementos que lo permiten a traves del atributo <style> dentro del <body>. Pero este tipo de estilo pierde las ventajas que ofrecen las hojas de estilo al mezclarse el contenido con la presentacion. 
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados? 
+Ejemplifique cada uno.
+
+a- Selector universal
+
+	El asterisco (*) es el selector universal en CSS. De forma automática, el asterisco selecciona todos los elementos en un documento.
+
+EJEMPLO: * { color: orange; }
+
+
+
+b- Selector de tipo
+
+	Un selector de tipo permite seleccionar todos los elementos en HTML que tienen un nombre de nodo común. Por ejemplo, al usar «a» el selector elegirá todos los elementos <a> y les aplicará el valor de la propiedad en CSS. «Input» seleccionará todos los elementos <input>, «span» todos los elementos <span> y así sucesivamente.
+
+	Además, puedes usar espacios de nombre definidos para restringir las selecciones de los selectores de tipo a elementos que están dentro de este espacio.
+
+EJEMPLO: span { background-color: orange; }
+
+c- Selector de clase
+
+	Los selectores de clase son herramientas que, como su nombre lo indica, permiten seleccionar todos los elementos que tienen un mismo nombre de clase. Por ejemplo, .intro te permitirá elegir todos los elementos que pertenecen a la clase «intro», así como .index escogerá todo elemento que tenga una clase «index».
+
+EJEMPLO: Supongamos que en esta ocasión quieres cambiar todos los elementos de la clase "pastoral" a un color anaranjado.
+
+.pastoral { color: orange; } 
+
+d- Selector de ID 
+
+	Un selector de ID está diseñado para seleccionar elementos con base en su atributo de ID. Por ejemplo, #toc seleccionará todos los elementos que tengas como ID «toc». Ten en cuenta que este selector solo funcionará cuando el valor dado en el selector es idéntico al del ID del atributo que quieres referir.
+
+EJEMPLO: Este es el código en CSS con un selector de ID que hace referencia a todos los elementos con el nombre "hubspot":
+
+#hubspot { color: orange;
+	   text-align: right;
+ }
+
+e- Selector de atributo
+
+	Los selectores de atributo están hechos para seleccionar todos los elementos que correspondan a un atributo específico o a un valor de atributo definido. Por ejemplo, a[href] elegirá todos los enlaces, mientras que a[href*="hubspot"] únicamente escogerá todas las URL que contengan la palabra «hubspot».
+
+	Puedes utilizar este tipo de selector para aplicar reglas de CSS a elementos que tienen un valor de atributo, por lo que si quieres modificar el estilo de todos los elementos que contengan «hubspot» en su URL, deberás utilizar a[href*="hubspot"].
+
+EJEMPLO: Supongamos que quieres hacer que todos los links que contienen «hubspot» cambien el color de la URL a anaranjado. En este caso puedes utilizar a[href*="hubspot"].
+
+a [href*= "hubspot" ] { color: orange;
+	    }
+	
+
+f- Selector de pseudo-clase
+
+	Un selector de pseudo-clase permite aplicar CSS a una selección de elementos o a elementos que se encuentran en un estado específico. Por ejemplo, :hover hará que únicamente se modifique el estilo de un elemento cuando el usuario se desplace sobre él. Otros ejemplos comunes son :active, :visited o :invalid.
+
+EJEMPLO: 
+
+	En este ejemplo queremos cambiar el color de los enlaces a verde cuando el usuario haya visitado los sitios haciendo clic sobre el hipervínculo. Los enlaces con los que no haya interactuado el usuario deberán permanecer en su color original, azul. Además, queremos que los enlaces cambien a un color rosado cuando el usuario se desplace sobre ellos.
+
+a:link {color: #0000FF;}
+
+a:visited {color: #00FF00;}
+
+a:hover {color: #FF00FF;}
+
+
+
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+
+	Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. Por ejemplo, :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector.
+
+:hover	Selecciona el elemento si el usuario pasa el ratón sobre dicho elemento.
+
+:active	Selecciona el elemento si el usuario se encuentra pulsando dicho elemento.
+
+:focus	Selecciona el elemento cuando tiene el foco (está en primer plano).
+:focus-within	Selecciona el elemento si uno de sus miembros hijos ha ganado el foco.
+
+:focus-visible	Selecciona el elemento cuando tiene el foco sólo de forma visible (TAB, por ejemplo).
+
+6. ¿ Qué es la herencia?
+
+	La herencia permite declarar propiedades en elementos de nivel alto y que estas propiedades se transmitan a todos los elementos descendientes. Sólo algunas propiedades se heredan por defecto, pero la herencia puede forzarse mediante la palabra clave inherit 
+
+7. ¿ En qué consiste el proceso denominado cascada?
+
+	El formato final de cualquier elemento depende de la combinación de todas las 
+propiedades que afectan al elemento. La denominación de hojas de estilo en 
+cascada hace referencia precisamente a este hecho. 
+
+--------------------------------------------- Ejercicio 2 --------------------------------------
+
+Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.
+
+1. `p#normal`: Selecciona todos los elementos `<p>` con el atributo `id` de valor "normal" y aplica las siguientes reglas:
+   - `font-family`: Establece la fuente del texto como "arial" o "helvetica".
+   - `font-size`: Fija el tamaño del texto en 11 píxeles.
+   - `font-weight`: Hace que el texto sea negrita.
+
+2. `*#destacado`: Selecciona todos los elementos con el atributo `id` de valor "destacado" (sin importar el tipo de elemento) y aplica las siguientes reglas:
+   - `border-style`: Establece el estilo del borde como "solid" (línea sólida).
+   - `border-color`: Define el color del borde como azul.
+   - `border-width`: Configura el ancho del borde en 2 píxeles.
+
+3. `#distinto`: Selecciona todos los elementos con el atributo `id` de valor "distinto" y aplica las siguientes reglas:
+   - `background-color`: Asigna un color de fondo "#9EC7EB".
+   - `color`: Cambia el color del texto a rojo.
+
+Ahora, en el código HTML:
+
+- El primer párrafo (`<p id="normal">`) tendrá un texto en negrita con fuente "arial" o "helvetica" y tamaño de 11 píxeles.
+- El segundo párrafo (`<p id="destacado">`) tendrá un borde sólido azul de 2 píxeles.
+- La tabla (`<table id="destacado">`) también tendrá un borde sólido azul de 2 píxeles.
+- El tercer párrafo (`<p id="distinto">`) tendrá un fondo de color "#9EC7EB" y el texto será de color rojo.
+
+---------------------------------------------- Ejercicio 3 --------------------------------------------------
+
+Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.
+
+- `color`: Cambia el color del texto a rojo.
+	- El segundo párrafo (`<p class="quitar">`) tendrá un color de texto rojo debido a la clase `.quitar`.
+	- El encabezado `<hl class="quitar">` tendrá un color de texto rojo debido a la clase `.quitar`.
+
+- `font-size`: Establece el tamaño de fuente en 8 píxeles.
+	- El primer párrafo (`<p class="desarrollo">`) tendrá un tamaño de fuente de 8 píxeles.
+
+- `font-size`: Fija el tamaño de fuente en 20 píxeles.
+	- El cuarto párrafo (`<p class="importante">`) tendrá un tamaño de fuente de 20 píxeles debido a la clase 	`.importante`.
+
+
+- El tercer párrafo no tiene clases que coincidan con `.quitar`, `.desarrollo` o `.importante`, por lo que no se aplicarán reglas adicionales.
+
+- El último párrafo (`<p class="quitar importante">`) tendrá tanto el color de texto rojo como el tamaño de fuente de 20 píxeles debido a las clases `.quitar` e `.importante`.
+
+
+---------------------------------------------- Ejercicio 4 --------------------------------------------------
+
+En ambos códigos, las declaraciones de estilo afectarán a los elementos de la página de la siguiente manera:
+
+- Todos los elementos (*) tendrán texto de color verde, a menos que se especifique lo contrario.
+- Los enlaces no visitados (a:link) tendrán texto gris.
+- Los enlaces visitados (a:visited) tendrán texto azul.
+- Los enlaces en estado "hover" (a:hover) tendrán texto fucsia (rosado).
+- Los enlaces en estado "active" (a:active) tendrán texto rojo.
+- Los párrafos (<p>) tendrán fuente Arial o Helvetica, un tamaño de fuente de 10px y texto de color negro.
+- Los elementos con la clase "contenido" tendrán un tamaño de fuente de 14px y un peso de fuente en negrita.
+
+Ahora, analicemos los efectos de los códigos:
+
+*Código 1:*
+
+- El párrafo (<p>) tiene la clase "contenido", lo que establece un tamaño de fuente de 14px y un peso de fuente en negrita según la declaración CSS.
+
+- Sin embargo, el atributo "style" del párrafo intenta cambiar el peso de fuente a normal, lo cual anula la declaración anterior.
+
+- El color del texto en el párrafo será verde (heredado de *), y su peso de fuente será normal debido al atributo "style".
+
+- Los elementos <a> (enlaces) tendrán colores cambiantes en función de sus estados predefinidos (link, visited, hover, active).
+
+- La tabla y su contenido no tienen ningún estilo específico en este código.
+
+*Código 2:*
+
+- El cuerpo (<body>) tiene la clase "contenido", lo que afecta a todos los elementos dentro de él.
+
+- El párrafo (<p>) no tiene una clase o estilo adicional, por lo que heredará el tamaño de fuente de 14px y el peso de fuente en negrita de la clase "contenido".
+
+- Los elementos <a> dentro de la tabla tendrán colores cambiantes en función de sus estados predefinidos (link, visited, hover, active).
+
+- La tabla y su contenido no tienen ningún estilo específico en este código.
+
+
+------------------------------------------------------------- Ejercicio 5 ---------------------------------------
+
+En cada caso, declarar una regla CSS que produzca el siguiente efecto:
+
+1.   Los textos enfatizados dentro de cualquier título deben ser rojos.
+
+h1 em,
+h2 em,
+h3 em,
+h4 em,
+h5 em,
+h6 em {
+    color: red;
+}
+
+2.   Cualquier elemento que tenga asignado el atributo "href" y que esté dentro de cualquier párrafo que a 
+su vez esté dentro de un bloque debe ser color negro.
+
+div p [href] {
+    color: black;
+}
+
+3.   El texto de las listas no ordenadas que estén dentro del bloque identificado como “ultimo” debe ser 
+amarillo pero si es un enlace a otra página debe ser azul.
+
+#ultimo ul {
+    color: yellow;
+}
+#ultimo ul a {
+    color: blue;
+}
+
+4.   Los elementos identificados como “importante” dentro de cualquier bloque deben ser verdes, pero si 
+están dentro de un título deben ser rojos.
+
+div#importante{color:green;}
+title#importante{color:red;}
+
+5.   Todos los elementos h1 que especifique el atributo title, cualquiera que sea su valor, deben ser azules.
+
+h1[title]{color:blue;}
+
+6.   El color de los enlaces en las listas ordenadas debe ser azul para los enlaces aún no visitados, y violeta 
+para los ya visitados y, además, no deben aparecer subrayados.
+
+    ol a:hover {
+        color: blue;
+        text-decoration: none;
+    }
+    
+    ol a:visited {
+        color: violet;
+        text-decoration: none;
+    }
+
+
+------------------------------------------------------ EJERCICIO 6 --------------------------------------------------------
+
+Para que quede igual sin alterar el css, primero se debe linkear el archivo:
+
+<link rel="stylesheet" href="estilo2.css" type="text/css">
+Luego borrar toda la etiqueta <style></style>
+El primer div que tiene ASIGNATURA ELECTIVA, se le debe colocar el id=encabezado
+El ultimo div el cual tiene el id=pie, se le debe agregar el class=estilopie
+
+
+
+
+
+
+
+
+
+
