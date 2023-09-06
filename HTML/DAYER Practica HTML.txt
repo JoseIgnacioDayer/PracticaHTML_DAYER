@@ -1,0 +1,425 @@
+ -------------------------------------------- EJERCITACION 1 ---------------------------------------------------
+
+1) HTML es el lenguaje de marcado principal de la World Wide Web. Originalmente, HTML fue diseñado principalmente como un lenguaje para describir semánticamente documentos científicos. Su diseño general, sin embargo, ha permitido que se adapte, en los años posteriores, para describir varios otros tipos de documentos e incluso aplicaciones.
+b) Con la creación del W3C, el desarrollo de HTML cambió de lugar de nuevo. Un primer intento frustrado de extender el HTML en 1995 conocido como HTML 3.0 luego dio paso a un enfoque más pragmático conocido como HTML 3.2, que se completó en 1997. HTML 4.01 siguió rápidamente más tarde ese mismo año.
+La ultima version fue HTML5
+
+2)En particular, que las tecnologías deben ser compatibles con versiones anteriores, que las especificaciones y las implementaciones deben coincidir incluso si esto significa cambiar la especificación en lugar de las implementaciones, y que las especificaciones deben ser lo suficientemente detalladas como para que las implementaciones interoperabilidad completa sin ingeniería inversa entre si
+
+3) Los elementos/ atributos desaprobados son aquellos que han quedado anticuados por la presencia de estructuras nuevas
+Los elementos/ atributos obsoletos son aquellos los cuales no hay garantia de soporte por parte de un agente de usuario
+
+4) La DTD es la declaracion del tipo de documento, se ubica en la primera linea del archivo HTML
+
+Según el rigor de HTML 4.01 utilizado podemos declararla como:
+Declaración transitoria: "http://www.w3.org/TR/html4/loose.dtd"> Declaración estricta: "http://www.w3.org/TR/html4/strict.dtd">
+5) Los metadatos son los datos de los datos, no son visibles al usuario
+Se especifican dentro de <head> </head> 
+
+-------------------------------------------- EJERCITACION 2 ----------------------------------------------------
+
+2.a)
+<!-- Código controlado el día 12/08/2009 →
+
+Este es un comentario HTML. Se coloca en la sección del `<head>` del documento HTML y no tiene ningún efecto en la presentación del contenido en la página. No contiene elementos, etiquetas ni atributos. No es obligatorio.
+
+
+2.b) 
+<div id="bloque1">Contenido del bloque1</div>
+
+Este es un elemento `<div>` que contiene el texto "Contenido del bloque1". Se coloca en cualquier sección del documento HTML donde quieras que aparezca en la página. El efecto es crear un contenedor de bloque en la página web. El atributo `id` con valor "bloque1" se utiliza para identificar el elemento y aplicar estilos o scripts a él. Es obligatorio tener una etiqueta de cierre `</div>`.
+
+
+2.c) 
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" 
+longdesc="detalles.htm" />
+
+Posee dos atributos, pero no hay etiqueta de cierre </img> ni contenido encerrado. Esto es porque un elemento de imagen no encierra contenido al cual afectar. Su propósito es desplegar una imagen en la página HTML, en el 
+lugar en que aparece.
+
+“src” es imprescindible para poder colocar una imagen. Indica dónde se encuentra alojada la imagen a mostrar. Se escribe: <img src=”x”>, (“x” la dirección o la url dónde se encuentra situada la imagen).
+
+Puede agregarse una descripción de la imagen dentro de la misma para pueda leerse al mantener el ratón encima de ella. Se usa el atributo “alt” .
+
+Los atributos `src`, `alt`, `id`, `name`, `width`, `height` y `longdesc` se utilizan para definir la fuente de la imagen, el texto alternativo, la identificación, el nombre, el ancho, el alto y la descripción larga de la imagen respectivamente. El atributo `src` es obligatorio, mientras que los demás son opcionales.
+
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " /> 
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+Estos son elementos `<meta>` que se colocan en la sección del `<head>` del documento HTML. El primer `<meta>` tiene un atributo `name` con valor "keywords" y contiene palabras clave relacionadas con el contenido de la página. El segundo `<meta>` tiene un atributo `http-equiv` con valor "expires" y especifica una fecha de vencimiento para el contenido de la página. Ambos elementos `<meta>` no tienen un efecto visible en la presentación del contenido en la página, pero pueden ser utilizados por motores de búsqueda y navegadores. Los atributos y valores en cada uno son:
+- `<meta name="keywords" lang="es" content="casa, compra, venta, alquiler ">`: `name` es obligatorio, `lang` y `content` son opcionales.
+- `<meta http-equiv="expires" content="16-Sep-2019 7:49 PM">`: `http-equiv` y `content` son obligatorios.
+
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" 
+rel="help">Resumen HTML </a> 
+
+Un hiperenlace es un vínculo que une un elemento del documento activo (por ejemplo, una palabra) con otro, de manera que activamos ese segundo elemento simplemente con un click del ratón en el primero.
+
+La sintaxis general de la etiqueta es muy simple: 
+<A HREF="destino">...</A>. 
+
+(Los puntos suspensivos representan el elemento enlazado.)
+
+Para que el destino se abra en una ventana nueva, hay que indicar el siguiente 
+atributo:
+<A HREF="destino" target="_blank">...</A>
+
+El destino de un hiperenlace puede ser de tres tipos:
+o Enlace externo: otro documento HTML situado en un ordenador remoto. 
+o Enlace local: otro documento HTML situado en el mismo ordenador. 
+o Ancla: otro lugar dentro del mismo documento HTML.
+
+
+
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido"> 
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th> 
+<th scope="col">A</th> 
+<th scope="col">B</th>
+<th scope="col">C</th> 
+</tr>
+<tr>
+<th scope="row">1º</th> 
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+<td>&nbsp;</td>
+</tr> 
+<tr>
+<th scope="row">2º</th> 
+<td>&nbsp;</td>
+<td>&nbsp;</td> 
+<td>&nbsp;</td>
+</tr> 
+</table>
+
+Esta es la etiqueta que define el comienzo y final de una tabla. Es una etiqueta de bloque, así que tendrá que situarse fuera de un párrafo. 
+
+<tr> </tr>: define el comienzo y el final de una fila de la tabla.
+
+<td> </td>: define el comienzo y el final del contenido de una celda.
+
+En HTML, las tablas se crean fila por fila. En cada fila (<tr>) se especifican los contenidos de las celdas (<td>).
+
+
+-------------------------------------------- EJERCITACION 3 ----------------------------------------------------
+
+
+3.a) 
+
+1 - "<a href="http://www.google.com.ar">Click aquí para ir a Google</a>" :
+
+href es una etiqueta para utilizar hiperenlaces. Un hiperenlace es un vínculo que une un elemento del documento activo (por ejemplo, una palabra) con otro, de manera que activamos ese segundo elemento simplemente con un click del ratón en el primero. Es la abreviatura de Hipertext Reference, o lo que es lo mismo Referencia de Hipertexto. En este atributo es donde indicamos el URL a la que apuntaremos con el enlace. O sea, la página a donde irá el navegador al hacer clic en el enlace.
+
+2 - "<a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>" :
+
+El atributo target indica al navegador dónde abrir la página o documento enlazado.
+Target="_blank", coloquialmente llamado target_blank, es un atributo HTML que se puede colocar en un enlace para indicar que la página de destino hacia la que apunta se abra en otra ventana del navegador. 
+
+3 - "<a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">" :
+
+`<a>`: Esta etiqueta define un enlace (hipervínculo) en HTML.
+
+`type="text/html"`: El atributo `type` se utiliza para especificar el tipo de contenido del enlace. En este caso, se establece como "text/html", que es el tipo de contenido para documentos HTML.
+
+`hreflang="es"`: El atributo `hreflang` se utiliza para especificar el idioma del recurso vinculado. En este caso, se establece como "es", lo que indica que el recurso está en español.
+
+`charset="utf-8"`: El atributo `charset` define la codificación de caracteres del recurso vinculado. Aquí, se establece como "utf-8", que es una codificación de caracteres ampliamente utilizada para admitir una variedad de caracteres y símbolos.
+
+`rel="help"`: El atributo `rel` se utiliza para especificar la relación entre la página actual y el recurso vinculado. En este caso, se establece como "help", lo que podría indicar que el enlace proporciona información de ayuda.
+
+
+4 - "<a href="#">Click aquí para ir a Google</a>" :
+
+`href="#"`: El atributo "href" especifica la URL a la que el enlace debe apuntar. En este caso, el valor es "#" que representa la misma página actual. En otras palabras, al hacer clic en el enlace, no se redirigirá a otra página, sino que permanecerá en la misma página.
+
+5 - "<a href="#arriba">Click aquí para volver arriba</a>" :
+
+En este caso, se establece como "#arriba", lo que significa que el enlace apunta al elemento en la página con el atributo `name` o `id` igual a "arriba".
+
+6 - "<a name="arriba" id="arriba"></a>" :
+
+`name="arriba"`: Este atributo se utiliza para asignar un nombre al marcador. En este caso, se le da el nombre "arriba".
+
+- `id="arriba"`: Este atributo también asigna una identificación única al marcador. La identificación (id) es una forma de identificar elementos de manera única en el documento HTML.
+
+3.b)
+
+<p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p> 
+
+En el primer caso, se muestra una imagen seguida de un enlace de texto ("Click aquí") dentro de un párrafo (`<p>`). La imagen tiene un atributo `alt` para proporcionar un texto alternativo en caso de que la imagen no se cargue correctamente.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p> 
+
+En el segundo caso, la estructura es similar a la primera, pero aquí el enlace de texto ("Click aquí") envuelve a la imagen. Esto significa que toda la imagen es un enlace y llevará al usuario al sitio web.
+
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+
+aquí el enlace de texto ("Click aquí") sigue a la imagen, sin envolverla. La imagen y el enlace son elementos separados dentro del párrafo.
+
+<p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <a 
+href="http://www.google.com.ar">Click aquí</a></p>
+
+Tanto la imagen como el enlace de texto están dentro del mismo enlace `a` (`<a>`), lo que significa que toda esa sección funciona como un enlace único que lleva al usuario al sitio web.
+
+3.c)<ul>
+<li>xxx</li>
+<li>yyy</li>              Genera una lista desordenada de items con xxx/yyy/zzz
+<li>zzz</li>			Cada li es un elemento de la lista
+</ul>
+
+<ol>
+<li>xxx</li>
+<li>yyy</li>              Genera una lista ordenada de items
+<li>zzz</li>
+</ol>
+
+
+<ol>
+	<li>xxx</li>
+</ol>
+<ol>
+	<li value="2">yyy</li>    Genera una lista ordenada donde la lista es la composicion de 3 listas anidadas, les atributa el value para darle el valor correcto
+</ol>
+<ol>
+	<li value="3">zzz</li>
+</ol>
+
+
+
+<blockquote>
+<p>1. xxx<br />           Genera una lista ordenada de items pero en lugar de usar <li> lo realiza con un parrafo y relleno de linea
+2. yyy<br />
+3. zzz</p>
+</blockquote>
+
+3.d)  
+<table border="1" width="300">
+<tr>
+<th>Columna 1</th>
+<th>Columna 2</th>
+</tr>
+<tr>                          Genera una tabla de 2 columnas y tres filas, tiene borde. El contenido de cada una indica lo que es, los 
+<td>Celda 1</td>				encabezados son definidos por th							
+<td>Celda 2</td>
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+
+<table border="1" width="300">
+<tr>
+<td><div align="center"><strong>Columna1</strong></div></td>
+<td><div align="center"><strong>Columna2</strong></div></td>
+</tr>
+<tr>
+<td>Celda 1</td>
+<td>Celda 2</td>                 Genera la misma lista, pero en la programacion utilizas divs (bloques) en lugar de <th> (Encabezados)
+</tr>
+<tr>
+<td>Celda 3</td>
+<td>Celda 4</td>
+</tr>
+</table>
+
+
+3.e) 
+<table width="200">
+<caption>
+Título
+</caption>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>    Genera una tabla donde los casilleros poseen un color grisaceo de fondo, el titulo es generado por
+<td bgcolor="#dddddd">&nbsp;</td>				caption, no utiliza un elemento td para realizarlo
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+
+
+<table width="200">
+<tr>
+<td colspan="3"><div align="center">Título</div></td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>   Genera una tabla, con la diferencia de que titulo es escrito a traves de columnas fusionadas
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+
+
+3.f)
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2" bgcolor="#dddddd">&nbsp;</td>    Tabla con la primera columna fusionada
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+
+<table width="200">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"
+bgcolor="#dddddd">&nbsp;</td>			Tabla donde la primera fila fusiona dos columnas
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+<tr>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+<td bgcolor="#dddddd">&nbsp;</td>
+</tr>
+</table>
+
+
+
+3.g)
+<table width="200" border="1">
+<tr>
+<td colspan="3"><div
+align="center">Título</div></td>
+</tr>
+<tr>
+<td colspan="2"rowspan="2">&nbsp;</td>		Genera tabla con borde donde ademas por el lado izq existe un cuadrado 2x2 y a la derecha dos filas en una misma columna
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+
+
+<table width="200" border="1" cellpadding="0" cellspacing="0">
+<tr>
+<td colspan="2"><div align="center">Título</div></td>
+</tr>
+<tr>
+<td rowspan="2">&nbsp;</td>                       Genera la misma tabla con diferencia que ajusta los padding en 0, por lo tanto el texto no tendra margenes
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td width="50%">&nbsp;</td>
+</tr>
+</table>
+
+
+3.h)
+
+<form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+<fieldset>
+	<legend>LOGIN</legend>
+	Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />				Genera un formulario donde los elementos van englobados en el fieldset para luego trabajarlo como un bloque
+	Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+</fieldset>
+        <input type="submit" id="boton1" name="boton1" value="Enviar" />
+</form>
+
+
+
+
+<form id="form2" name="form2" action="" method="get" target="_blank">
+LOGIN<br />												Genera la misma lista a diferencia que el Login no lo abarca el legion sino que se encuentra dentro del form y rellena linea con br
+<label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />				Los datos a ingresar estan mostrados bajo un label (etiquetas)
+<label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+<input type="submit" id="boton2" name="boton2" value="Enviar" />
+</form>
+
+
+
+<form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="post" target="_blank">
+<fieldset>
+<legend>LOGIN</legend>
+Usuario: <input type="text" id="usu3" name="usu3" /><br />						Lo mismo que en el primer caso, a diferencia que los inputs no vienen completados
+Clave: <input type="password" id="clave3" name="clave3" />
+</fieldset>
+<input type="reset" id="boton3" name="boton3" value="Enviar" />
+</form>
+
+
+
+3.i)
+
+<label>Botón 1
+<button type="button" name="boton1" id="boton1">
+<img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />			Genera un label donde indica boton1 y a su vez se genera un boton con una imagen dentro y un texto
+<b>CLICK AQUÍ</b></button></label>
+
+
+<label>Botón 2
+<input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />				Similar al anterior con la diferencia que en lugar de crear un boton, genera un input del tipo boton y solo admite texto, no imagenes ni 
+</label>																		enlaces
+
+
+
+3.j)
+
+<p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+<label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>			Genera un parrafo con dos etiquetas donde cada una posee un input del tipo radio (Seleccion)
+
+
+<p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />			Graficamente se genera lo mismo la diferencia es que los names son diferentes, se consideran diferentes elementos en caso de personalizar
+<label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>										(CREO)
+
+
+3.K) 
+
+
+<select name="lista">
+<optgroup label="Caso 1">
+<option>Mayo</option>				Se genera un select para el usuario, las opciones son agrupadas por 
+<option>Junio</option>						optgroup
+</optgroup>
+<optgroup label="Caso 2">
+<option>Mayo</option>
+<option>Junio</option>
+</optgroup>
+</select>
+
+
+
+<select name="lista[]" multiple="multiple">
+<optgroup label=" Caso 1">
+<option>Mayo</option>
+<option>Junio</option>				Se genera un select identico al anterior, a diferencia de que se 
+</optgroup>					usa una barra desplazadora, no se abre el select clickeando
+<optgroup label=" Caso 2">			esto se debe a los atributos del select. El multiple permite 
+<option>Mayo</option>				seleccionar cero o mas opciones de la lista
+<option>Junio</option>
+</optgroup>
+</select>
+
