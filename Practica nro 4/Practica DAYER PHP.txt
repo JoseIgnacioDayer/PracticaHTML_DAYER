@@ -1,0 +1,99 @@
+
+------------------------------------------------- Ejercicio 1 ------------------------------------------------
+
+Variables:
+Boolenas: $a,
+Enteras: $i, $d, $f, $g
+Strings: $b, $c,
+
+Operadores: * binario, = binario, += binario, ? : ternario, ++ unario
+Funciones (parámetros): doble($i), gettype($var), is_string($var), is_int($var)
+Estructuras de control: cláusula if
+Salida por pantalla: booleanstringstringinteger1xyzxyz184444 
+
+------------------------------------------------- Ejercicio 2 ------------------------------------------------
+
+
+a) Los tres fragmentos de código producen la misma salida
+b) Los códigos son equivalentes
+c) Los códigos son equivalentes
+
+
+------------------------------------------------- Ejercicio 3 ------------------------------------------------
+
+
+a) El código es utilizado para crear una tabla con un ancho del 90% y ancho de bordes igual a 1. La tabla contendrá 5 filas con 2 columnas cada una.
+
+b) Este codigo usa etiquetas html para que el usuario pueda poner su respectiva edad. Segun la edad, mediante la estructura de control if y else, el codigo imprimira en pantalla 'Mayor de edad' si la edad es mayor o igual a 21 o por el contraria imprimira 'Menor de edad'. 
+
+
+------------------------------------------------- Ejercicio 4 ------------------------------------------------
+
+El primer echo produce un error ya que las variables $flor y $color no están definidadas y al tratarse de un string encerrado entre comillas dobles, el intérprete busca reemplazar los valores de las mismas. Si se hubiersen utilizado comillas simples, no habría ocurrido un error y la salida sería el string literal.
+Para el segundo echo, ya se incluyó el otro archivo de php donde las variables están definidas, por lo que esta vez la salida será: "El clavel blanco".
+
+
+------------------------------------------------- Ejercicio 5 ------------------------------------------------
+
+1. Se especifica el nombre del archivo $archivo que se utilizará para almacenar el número de visitas. Este archivo debe existir en la misma carpeta que los archivos PHP y tener permisos de lectura y escritura.
+
+2. Se abre el archivo en modo lectura "r" para obtener el valor actual del contador de visitas.
+
+3. Se lee el contenido del archivo con fread y se almacena en la variable $cont.
+
+4. Se cierra el archivo con fclose después de leerlo.
+
+5. Luego, se abre el archivo nuevamente en modo escritura "w" para actualizar el contador de visitas.
+
+6. Se incrementa el valor de $cont en 1 para representar la nueva visita.
+
+7. Se utiliza fwrite para guardar la modificación en el archivo.
+
+8. Finalmente, se muestra el total de visitas en la página web mediante un echo.
+
+
+
+
+---------------------------------------------------------- ARRAYS Y FUNCIONES ---------------------------------------
+
+
+------------------------------------------------- Ejercicio 1 ------------------------------------------------
+
+Sí, los códigos son equivalentes. En el primero se utiliza la función array para indicar las distinas claves y valores, mientras que en el segundo esto se hace manualmente.
+
+
+------------------------------------------------- Ejercicio 2 ------------------------------------------------
+
+a) bartrue
+b) 5942
+c)
+
+1. Después de agregar el valor 56 al final del array:
+   $matriz será igual a [5 => 1, 12 => 2, 56].
+
+2. Luego, se establece $matriz["x"] = 42;, lo que agrega un nuevo elemento al array asociativo con la clave "x" y el valor 42:
+   $matriz será igual a [5 => 1, 12 => 2, 56, "x" => 42].
+
+3. Después, se elimina el elemento con clave 5:
+   $matriz será igual a [12 => 2, 56, "x" => 42].
+
+4. Finalmente, se destruye completamente el array $matriz usando unset($matriz);.
+
+
+------------------------------------------------- Ejercicio 3 ------------------------------------------------
+
+a) Suponiendo que son las 15:06:27 del 27/09/2023, la salida resultante es: "Has entrado en esta pagina a las 15 horas, con 06 minutos y 27 segundos, del 27/09/2023"
+
+b) La salida es: "5+6=11"
+
+
+------------------------------------------------- Ejercicio 4 ------------------------------------------------
+
+La función comprobar_nombre_usuario($nombre_usuario) comprueba si un nombre de usuario es válido. Esta función verifica la longitud y los caracteres permitidos en un nombre de usuario y muestra un mensaje correspondiente.
+
+// Ejemplos de uso
+comprobar_nombre_usuario("usuario123"); // Válido
+comprobar_nombre_usuario("mi-nombre");   // Válido
+comprobar_nombre_usuario("A@#%$");       // No válido
+comprobar_nombre_usuario("ab");           // No válido
+comprobar_nombre_usuario("nombre_de_usuario_con_espacios"); // Válido
