@@ -1,0 +1,14 @@
+table {
+    height: 200px;
+    align-items: center;
+    border: solid;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 500px;
+    border-spacing: 6px;
+    background-color: rgb(241, 220, 144);
+}
+
+body {
+    background-color: rgb(216, 216, 179);
+}
