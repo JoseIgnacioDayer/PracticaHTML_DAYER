@@ -1,0 +1,63 @@
+Ejercicio 1: Completar
+
+
+Consulta a una base de datos: Para comenzar la comunicación con un servidor de base de datos MySQL, es
+necesario abrir una conexión a ese servidor. Para inicializar esta conexión, PHP ofrece la función
+
+-----: mysqli_connect (mysql_connect) :-----
+
+Todos sus parámetros son opcionales, pero hay tres de ellos que generalmente son necesarios:
+
+-----: $hostname ; $nombreUsuario ; $contraseña :-----
+
+Una vez abierta la conexión, se debe seleccionar una base de datos para su uso, mediante la función
+
+-----:	mysqli_select_db (mysql_select_db) :-----
+
+Esta función debe pasar como parámetro
+
+-----:	$nombreConexión, $nombreBaseDatos :-----
+
+La función mysqli_query () se utiliza para
+
+-----:	nos permite ejecutar una consulta a la base de datos que especifiquemos :-----
+
+y requiere como parámetros
+
+-----: $nombreConexion, "Consulta aquí" :-----
+
+La cláusula or die() se utiliza para
+
+-----: Captura el error. :-----
+
+y la función mysqli_error () se puede usar para
+
+string mysqli_error ( $link )
+
+Devuelve el último mensaje de error para la llamada más reciente a una función de MySQLi que puede haberse ejecutado correctamente o haber fallado.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+$fila = mysqli_fetch_array($vResultado); indica que los valores existentes en la fila se introduzcan en un array cuyos índices en principio pueden ser tanto asociativos (el nombre de la columna) como numéricos (empezando por cero).
+
+En primer lugar, se comprueba si la variable $fila contiene un valor vacío. Si es así, significa que no hay más resultados de la consulta, por lo que la estructura de control se detiene.
+
+Si la variable $fila contiene un valor, significa que hay al menos un resultado más de la consulta. En este caso, los datos de la fila actual se almacenan en la variable $fila. Posteriormente, se ejecuta el código dentro del cuerpo de la estructura de control. Se utiliza un bucle while para recorrer los resultados de la consulta. El bucle se detiene cuando el objeto mysqli_result no contiene más filas.
+
+En cada iteración del bucle, se recupera una fila de los resultados de la consulta y se almacena en la variable $fila.
+
+Luego, se muestran los datos de la fila actual en una tabla HTML 
+
+Finalmente, cierran la conexión a la base de datos.
+
+
+------------------------------------------------------------ EJERCICIO 2 -------------------------------------------
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(233, 231, 170);
+}
+
+table {
+    align-items: center;
+    border: solid;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+th,
+td {
+    background-color: rgb(241, 212, 109);
+}
+
+h2 {
+    background-color: rgb(241, 212, 109);
+}
+
+input {
+    margin-top: 20px;
+}
